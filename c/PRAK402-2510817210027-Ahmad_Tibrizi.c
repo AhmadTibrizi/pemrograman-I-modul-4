@@ -19,22 +19,18 @@ int main(){
             ganjil[sizeganjil] = i;
             sizeganjil++;
         }
-        
     }
 
-    
     for (int i = 0; i < sizeganjil; i++)
     {
         printf("%d ", ganjil[i]);
     }
 
     printf("\n");
-
+    
     for (int i = sizegenap-1; i >= 0; i--)
     {
         printf("%d ", genap[i]);
     }
-    
-
     return 0;
 }
