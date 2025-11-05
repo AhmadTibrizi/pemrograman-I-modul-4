@@ -1,6 +1,5 @@
-bilangan_simbol = input("Masukkan bilangan dan simbol: ").split()
-bilangan = int(bilangan_simbol[0])
-simbol = bilangan_simbol[1]
+bilangan = int(input("Masukkan bilangan kelipatan: "))
+simbol = input("Masukkan simbol: ")
 temp = bilangan
 
 for i in range(50):
