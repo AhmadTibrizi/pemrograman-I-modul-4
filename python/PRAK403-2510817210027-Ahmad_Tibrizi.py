@@ -1,6 +1,5 @@
-bilangan = input("Masukkan angka: ").split()
-angka1 = int(bilangan[0])
-angka2 = int(bilangan[1])
+angka1 = int(input(("Masukkan angka pertama: ")))
+angka2 = int(input(("Masukkan angka kedua: ")))
 
 def silang(angka_besar, angka_kecil):
     selisih = angka_besar-angka_kecil + 1
@@ -17,10 +16,17 @@ if angka1 > angka2:
     list1 = res[0]
     list2 = res[1]
     for i in range(len(list1)):
-        print(list1[i], list2[i], end= ' - ')
+        if i != len(list1)-1:
+            print(list1[i], list2[i], end= ' - ')
+        else:
+            print(list1[i], list2[i])
+
 else:
     res = silang(angka2, angka1)
     list1 = res[0]
     list2 = res[1]
     for i in range(len(list1)):
-        print(list2[i], list1[i], end= ' - ')
+        if i != len(list1)-1:
+            print(list2[i], list1[i], end= ' - ')
+        else:
+            print(list2[i], list1[i])
